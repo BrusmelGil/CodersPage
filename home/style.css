@@ -1,5 +1,9 @@
 /*HEADER */
+*{outline: solid 2px red;}
 
+.container {
+    height: 10vh;
+}
 /*MAIN */
 
 /*FOOTER */
