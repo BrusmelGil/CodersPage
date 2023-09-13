@@ -2,6 +2,11 @@
     font-family: "Jost";
     src: url(../font/Jost/Jost-VariableFont_wght.ttf);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
 /*HEADER */
 
 /*MAIN */
