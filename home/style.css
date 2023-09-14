@@ -31,7 +31,7 @@
 
 .profile-img img {
     width: 15vw;
-    height: 28vh;
+    height: 15vw;
     object-fit: cover;
     border-radius: 100%;
     transition: transform .5s ease;
@@ -60,6 +60,7 @@
 
     .profile-img img {
         height: 13vh;
+        width: 13vh;
 
     }
 
