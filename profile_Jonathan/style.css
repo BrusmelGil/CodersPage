@@ -77,20 +77,20 @@
     
 }
 
-.btn:hover{
+.btn:active{
     animation: backgradient 5s ease infinite ;
 }
 
 @keyframes backgradient{
     
     0% {
-        background: linear-gradient(to right, var(--second-color), var(--main-color));
+        color: linear-gradient(to right, var(--second-color), var(--main-color));
     }
     50%{
-        background: linear-gradient(to left, var(--main-color), var(--second-color));
+        color: linear-gradient(to left, var(--main-color), var(--second-color));
     }
     50%{
-        background: linear-gradient(to right, var(--second-color), blue);
+        color: linear-gradient(to right, var(--second-color), blue);
 
     }
     100% {
