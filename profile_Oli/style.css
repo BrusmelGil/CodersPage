@@ -33,7 +33,7 @@ h1{
 }
 
 .container-firstcolor_h1{
-    animation: transitioncolor 5s ease infinite;
+    animation: transitioncolor 10s infinite;
     color: #ffca41 
 }
 
@@ -45,6 +45,7 @@ h1{
 a{
     text-decoration: none;
     color: black;
+    width: 10vw;
 }
 
 .container-menu_header{
@@ -60,7 +61,7 @@ a{
 
 .container-somos{
     color: white;
-    width: 10vw;
+    font-size: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,17 +69,30 @@ a{
 
 .container-equipo{
     color: white;
-    width: 10vw;
+    font-size: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container-contactenos{
-    width: 10vw;
+    
+    width: 120px;
+    height: 40px;
+    font-size: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn{
+    background-color: #ffc94182;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    
 }
 
 @keyframes transitioncolor{
@@ -102,6 +116,19 @@ a{
 
 @media (max-width: 800px){
 
-
+    .container-contactenos{
+    
+        width: 100px;
+        height: 30px;
 
 }
+
+@media (max-width: 500px){
+
+    .container-contactenos{
+    
+        width: 80px;
+        height: 25px;
+
+}
+
