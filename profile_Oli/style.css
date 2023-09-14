@@ -1,4 +1,4 @@
-*{outline: solid 2px red;}
+/* *{outline: solid 2px red;} */
 
 @font-face {
     font-family: "Jost";
@@ -38,8 +38,7 @@ h1{
 }
 
 .container-second_color{
-    color: white;
-    
+    color: white;   
 }
 
 a{
@@ -65,6 +64,19 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Añadimos posición relativa al contenedor */
+}
+
+.container-somos:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
+    animation: lineaAnimada 4s linear infinite; /* Animación para la línea */
+    /* transform-origin:left; */
 }
 
 .container-equipo{
@@ -73,12 +85,26 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; /* Añadimos posición relativa al contenedor */
+}
+
+.container-equipo:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
+    animation: lineaAnimada 4s linear infinite; /* Animación para la línea */
+    /* transform-origin:left; */
+   
 }
 
 .container-contactenos{
     
-    width: 120px;
-    height: 40px;
+    width: 180px;
+    height: 45px;
     font-size: 2vw;
     display: flex;
     justify-content: center;
@@ -94,6 +120,11 @@ a{
     cursor: pointer;
     
 }
+
+.contact {
+    display: none;
+}
+
 
 @keyframes transitioncolor{
     0% {
@@ -111,6 +142,26 @@ a{
       100% {
         color: #ffca41; 
       }
+
+}
+
+@keyframes lineaAnimada {
+    0%, 100% {
+        transform: scaleX(0); /* Escala inicial y final, línea invisible */
+    }
+    50% {
+        transform: scaleX(1); /* Escala a la mitad, línea visible */
+    }
+}
+
+
+
+@media (max-width: 1200px){
+
+    .container-contactenos{
+    
+        width: 120px;
+        height: 35px;
 
 }
 
