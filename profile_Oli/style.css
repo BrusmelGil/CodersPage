@@ -1,0 +1,107 @@
+*{outline: solid 2px red;}
+
+@font-face {
+    font-family: "Jost";
+    src: url(../font/Jost/Jost-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Jost;
+    
+}
+
+.container {
+    background-color: #FF7F99;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container-h1{
+    width: 20vw;
+    margin-left: 5vw;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 4vw;
+}
+
+.container-firstcolor_h1{
+    animation: transitioncolor 5s ease infinite;
+    color: #ffca41 
+}
+
+.container-second_color{
+    color: white;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container-menu_header{
+    height: 5vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5vw;
+    
+}
+
+.container-somos{
+    color: white;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-equipo{
+    color: white;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contactenos{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes transitioncolor{
+    0% {
+        color: #ffca41; 
+      }
+      25% {
+        color: #71ff41; 
+      }
+      50% {
+        color: #41b9ff; 
+      }
+      75% {
+        color: #71ff41; 
+      }
+      100% {
+        color: #ffca41; 
+      }
+
+}
+
+@media (max-width: 800px){
+
+
+
+}
