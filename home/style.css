@@ -264,7 +264,7 @@ a{
 }
 
 .btn:active{
-    animation: backgradient 5s ease infinite ;
+    animation: backgradient 2s ease infinite ;
 }
 
 @keyframes backgradient{
@@ -276,11 +276,11 @@ a{
         color: linear-gradient(to left, var(--main-color), var(--second-color));
     }
     50%{
-        color: linear-gradient(to right, var(--second-color), var(--main-color);
+        color: linear-gradient(to right, var(--second-color), var(--main-color));
 
     }
     100% {
-        background-color: linear-gradient(to left, var(--main-color), var(--second-color));
+        background: linear-gradient(to left, var(--main-color), var(--second-color));
     }   
 }
 
