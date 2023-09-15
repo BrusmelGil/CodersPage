@@ -276,7 +276,7 @@ a{
         color: linear-gradient(to left, var(--main-color), var(--second-color));
     }
     50%{
-        color: linear-gradient(to right, var(--second-color), var(--main-color);
+        color: linear-gradient(to right, var(--second-color), var(--main-color));
 
     }
     100% {
